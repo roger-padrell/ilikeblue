@@ -21,10 +21,8 @@ dnf5 install -y \
 
 ### Install essentials
 dnf5 install -y \
-    vi \
     git \
-    wl-clipboard \
-    toolbx
+    toolbox
 
 ### Install flatpak?
 dnf5 install -y flatpak
