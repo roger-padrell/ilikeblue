@@ -10,7 +10,7 @@ A custom Fedora Atomic image.
 ## Features
 
 - [Niri](https://niri-wm.github.io/niri) as Window Manager
-- [DankMaterialShell](https://github.com/AvengeMedia/DankMaterialShell) as Desktop
+- [Noctalia](https://docs.noctalia.dev/) as Desktop
 - Flatpak+flathub
 - Native homebrew (`ghcr.io/ublue-os/brew`)
 - Toolbox
