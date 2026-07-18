@@ -32,18 +32,6 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 ### Some preinstalled apps
 flatpak install -y flathub org.kde.konsole org.kde.dolphin io.gitlab.librewolf-community
 
-### Homebrew
-# Homebrew requires build essentials and git (git is already installed above)
-dnf5 install -y \
-    gcc \
-    g++ \
-    make \
-    curl
-# Install Homebrew (runs as root in container, which is fine for image building)
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# Add Homebrew to PATH for subsequent commands
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
 ### Install niri and dms
 sudo dnf copr enable avengemedia/dms
 sudo dnf install niri dms
