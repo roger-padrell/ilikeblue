@@ -33,8 +33,8 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak install -y flathub org.kde.konsole org.kde.dolphin io.gitlab.librewolf-community
 
 ### Install niri and dms
-sudo dnf -y copr enable avengemedia/dms
-sudo dnf -y install niri dms
+dnf5 -y copr enable avengemedia/dms
+dnf5 install -y niri dms
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable avengemedia/dms
 
