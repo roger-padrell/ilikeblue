@@ -29,6 +29,10 @@ dnf5 install -y flatpak
 # Add Flathub remote (the main Flatpak repository)
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
+### Install homebrew dependencies
+sudo dnf group install -y development-tools
+sudo dnf install -y procps-ng curl file
+
 ### Some preinstalled apps
 flatpak install -y flathub org.kde.konsole org.kde.dolphin io.gitlab.librewolf-community
 
