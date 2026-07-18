@@ -16,8 +16,6 @@ cp -avf "/ctx/system_files"/. /
 
 dnf5 install -y \
     niri \
-    wayland \
-    wayland-devel \
     libxkbcommon \
     libxkbcommon-devel
 
